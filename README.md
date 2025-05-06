@@ -1,4 +1,4 @@
-# Laravel 10 開放應用程式介面
+# Laravel 11 開放應用程式介面
 
 提供開發者可以透過程式去存取應用軟體或網路服務，隨著網路及科技上的進步，有愈來愈多的公司組織透過網際網路（HTTP）對外提供應用程式介面（API），讓外部應用系統得以透過這些介面存取原本私有的資源。
 
@@ -21,10 +21,10 @@ $ php artisan key:generate
 $ php artisan migrate --seed
 ```
 - 在瀏覽器中輸入已定義的路由 URL 來訪問，例如：http://127.0.0.1:8000。
-- 你可以經由 `/api/company/public/?page={頁數}` 來進行公開發行公司取得。
+- 你可以經由 `/api/v1/company/public/?page={頁數}` 來進行公開發行公司取得。
 
 ----
 
 ## 畫面截圖
-![](https://i.imgur.com/03wQonz.png)
+![](https://i.imgur.com/JkChCmp.png)
 > 讓開發者更容易分享資料、開發社群及創新應用，讓資料、資源可以在某個網站被創造，接著在多個不同的平台或網站上被呈現或更新

@@ -9,26 +9,29 @@ class PublicCompany extends Model
     /**
      * The attributes that are mass assignable.
      *
-     * @var array
+     * @var array<int, string>
      */
     protected $fillable = [
     ];
 
     /**
-     * The attributes that should be hidden for arrays.
+     * The attributes that should be hidden for serialization.
      *
-     * @var array
+     * @var array<int, string>
      */
     protected $hidden = [
     ];
 
     /**
-     * The attributes that should be cast to native types.
+     * Get the attributes that should be cast.
      *
-     * @var array
+     * @return array<string, string>
      */
-    protected $casts = [
-        'incorporation_date' =>  'datetime:Y-m-d',
-        'listing_date'       =>  'datetime:Y-m-d',
-    ];
+    protected function casts(): array
+    {
+        return [
+            'incorporation_date' =>  'datetime:Y-m-d',
+            'listing_date'       =>  'datetime:Y-m-d',
+        ];
+    }
 }

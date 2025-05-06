@@ -3,22 +3,17 @@
 namespace Database\Seeders;
 
 use Illuminate\Database\Seeder;
+use Illuminate\Support\Facades\DB;
 
 class PublicCompanyTableSeeder extends Seeder
 {
-
     /**
-     * Auto generated seed file
-     *
-     * @return void
+     * Run the database seeders.
      */
-    public function run()
+    public function run(): void
     {
-        
-
-        \DB::table('public_companies')->delete();
-        
-        \DB::table('public_companies')->insert([
+        DB::table('public_companies')->delete();   
+        DB::table('public_companies')->insert([
             0 => 
             [
                 'release_date' => 1100713,
